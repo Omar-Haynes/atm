@@ -196,7 +196,7 @@ app = Flask(__name__)
 
 # Configure secret key for session security
 # os.urandom generates a cryptographically secure random key
-app.config['SECRET_KEY'] = os.urandom(24)
+app.config['SECRET_KEY'] = 'abc123def467'
 
 # Configure SQLite database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///atm_database.db'
